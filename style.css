@@ -1,0 +1,30 @@
+/* Glowing effect */
+.menu-card {
+  cursor: pointer;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 4px #efdf85, 0 0 4px #efdf85, 0 0 6px #efdf85;
+  }
+  100% {
+    box-shadow: 0 0 8px #efdf85, 0 0 8px #efdf85, 0 0 12px #efdf85;
+  }
+}
+
+/* Shaking animation */
+@keyframes shake {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-5px, 0) rotate(-2deg); }
+  40% { transform: translate(5px, 0) rotate(2deg); }
+  60% { transform: translate(-5px, 0) rotate(-2deg); }
+  80% { transform: translate(5px, 0) rotate(2deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* Apply to the image */
+.shake-image {
+  animation: shake 1s infinite;
+}
+
