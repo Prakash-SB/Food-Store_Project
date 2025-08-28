@@ -6,32 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Store Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://ik.imagekit.io/elo1350/food-munch-img.png?updatedAt=1755879754577">
 </head>
 
-<body>
-    <nav>
+<body id="body">
+    
+    <nav class="fixed bg-white w-full">
         <div class="2xl:container mx-auto grid ">
             <div class="w-[100%] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center">
-<div class="px-20 pb-2 flex justify-between items-center">
-    <img class="w-20" src="https://ik.imagekit.io/elo1350/food-munch-img.png?updatedAt=1755879754577" alt="logo">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu md:hidden"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
-</div>
-<div class="pr-10 hidden md:block">
-    <div class="flex justify-end gap-7">
-    <h5 class="text-[#7b8794] text-[18px] bg-slate-100 rounded-full  ">Why Choose Us</h5>
-    <h5 class="text-[#7b8794] text-[18px] bg-slate-100 rounded-full ">Menu</h5>
-    <h5 class="text-[#7b8794] text-[18px] bg-slate-100 rounded-full ">Fresh Food</h5>
-    <h5 class="text-[#7b8794] text-[18px] bg-slate-100 rounded-full ">Payment</h5>
-    <h5 class="text-[#7b8794] text-[18px] bg-slate-100 rounded-full ">Gift</h5>
-    <h5 class="text-[#7b8794] text-[18px] bg-slate-100 rounded-full ">Social Media</h5>
-</div>
-</div>
+                <div class="px-20 flex justify-between items-center">
+                    <a href="#body"><img class="w-10" src="https://ik.imagekit.io/elo1350/food-munch-img.png?updatedAt=1755879754577"
+                        alt="logo"></a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-menu-icon lucide-menu md:hidden">
+                        <path d="M4 12h16" />
+                        <path d="M4 18h16" />
+                        <path d="M4 6h16" />
+                    </svg>
+                </div>
+                <div class="pr-10 hidden md:block">
+                    <div class="flex justify-end gap-5 text-[#7b8794] text-[18px] rounded-full">
+                        <a href="#WhyChooseUs">Why Choose Us</a>
+                        <a href="#Menu">Menu</a>
+                        <a href="#Fresh">Fresh Food</a>
+                        <a href="#Payment">Payment</a>
+                        <a href="#Gift">Gift</a>
+                        <a href="#Social">Social Media</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
     <!-- Main Image start -->
     <section
-        class="bg-[url('https://ik.imagekit.io/elo1350/foodmunch-banner-bg.png_updatedAt=1745939013497?updatedAt=1756050544866')] bg-no-repeat h-[100vh] bg-cover">
+        class="bg-[url('https://ik.imagekit.io/elo1350/foodmunch-banner-bg.png_updatedAt=1745939013497?updatedAt=1756050544866')] bg-no-repeat h-[100vh] bg-cover bg-center">
         <div class="2xl:container mx-auto grid ">
             <div class="w-[80%] mx-auto">
                 <div class="flex justify-center h-[100vh] items-center flex-col gap-5">
@@ -39,19 +49,21 @@
                     <h3 class="text-white font-bold text-[30px] ">Eat Smart & Health</h3>
                     <div class="flex gap-5">
                         <button
-                            class="py-3 px-5 rounded-lg text-[20px] bg-[#c2a502] border border-orange-300 text-white hover:bg-transparent hover:text-orange-500 shadow-md shadow-black">View
+                            class=" px-5 rounded-lg text-[16px] w-32 h-10 text-center bg-[#c2a502] border border-orange-300 text-white hover:bg-transparent hover:text-orange-500 shadow-md shadow-black">View
                             Menu</button>
                         <button
-                            class="py-3 px-5 rounded-lg text-[20px] bg-[#c2a502] border border-orange-300 text-white hover:bg-transparent hover:text-orange-500 shadow-md shadow-black">Order
+                            class="px-5 rounded-lg text-[16px] w-32 h-10 bg-[#c2a502] border border-orange-300 text-white hover:bg-transparent hover:text-orange-500 shadow-md shadow-black">Order
                             Now</button>
                     </div>
                 </div>
             </div>
         </div>
+        
     </section>
+
     <!-- Main Image end -->
     <!-- Why choose Us?  Start -->
-    <section>
+    <section id="WhyChooseUs" class="pt-1">
         <div class=" 2xl:container mx-auto">
             <div class="w-[80%] mx-auto m-10 flex flex-col gap-5 ">
                 <div>
@@ -59,9 +71,9 @@
                     <h3 class="text-[20px] text-[#7b8794]">We use both original recipes and classic versions of famous
                         food items.</h3>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
                     <div
-                        class="border border-[#b5b5b5] gap-4 border-solid rounded-lg flex flex-col items-center  m-5 p-5 shadow-md shadow-slate-500">
+                        class="border border-[#b5b5b5] gap-4 border-solid rounded-lg flex flex-col items-center  m-5 p-5 shadow-md shadow-slate-500 menu-card">
                         <img src="https://ik.imagekit.io/elo1350/food-serve.png?updatedAt=1755879902000" alt="icon">
                         <h5 class="text-[#323f4b] text-[28px] font-semibold">Food Service</h5>
                         <p class="text-[#7b8794] text-[20px] text-center w-[250px]">Experience fine dining at the
@@ -70,7 +82,7 @@
                     </div>
 
                     <div
-                        class="border border-[#b5b5b5] gap-4 border-solid rounded-lg flex flex-col items-center  m-5 p-5 shadow-md shadow-slate-500 ">
+                        class="border border-[#b5b5b5] gap-4 border-solid rounded-lg flex flex-col items-center  m-5 p-5 shadow-md shadow-slate-500 menu-card ">
                         <img src="https://ik.imagekit.io/elo1350/offers-img.png?updatedAt=1755880293549" alt="icon">
                         <h5 class="text-[#323f4b] text-[28px] font-semibold">Best Offers</h5>
                         <p class="text-[#7b8794] text-[20px] text-center w-[250px]">Food Coupons & Offers upto 50% OFF
@@ -78,7 +90,7 @@
                     </div>
 
                     <div
-                        class="border border-[#b5b5b5] gap-4 border-solid rounded-lg flex flex-col items-center  m-5 p-5 shadow-md shadow-slate-500">
+                        class="border border-[#b5b5b5] gap-4 border-solid rounded-lg flex flex-col items-center  m-5 p-5 shadow-md shadow-slate-500 menu-card">
                         <img src="https://ik.imagekit.io/elo1350/fruits-img.png?updatedAt=1755880296061" alt="icon">
                         <h5 class="text-[#323f4b] text-[28px] font-semibold">Fresh Food</h5>
                         <p class="text-[#7b8794] text-[20px] text-center w-[250px]">The Fresh Food group provides
@@ -89,17 +101,17 @@
             </div>
         </div>
     </section>
-    <!-- Why choose Us?  Start -->
+    <!-- Why choose Us?  End -->
     <!-- explore menu  -->
-    <section>
+    <section id="Menu" class="pt-1">
         <div class=" 2xl:container mx-auto">
             <div class="w-[80%] mx-auto m-10 flex flex-col gap-10">
                 <div>
                     <h2 class="text-[#183b56] text-[34px] font-[700]">Explore Menu </h2>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 transition-all scroll-smooth">
                     <div
-                        class="flex flex-col gap-3 border border-solid rounded-xl justify-center items-center p-8 shadow-lg shadow-slate-500">
+                        class="flex flex-col gap-3  border-solid rounded-xl justify-center items-center p-8 shadow-lg shadow-slate-500  hover:border-slate-200 hover:border-4 cursor-pointer">
                         <img src="https://ik.imagekit.io/elo1350/em-ginger-fried-img.png?updatedAt=1755880293486"
                             class="w-[200px] rounded-3xl" alt="image1">
                         <h5 class="text-[24px] text-[#323f4b] font-bold">Non-veg Starters</h5>
@@ -113,7 +125,7 @@
                     </div>
 
                     <div
-                        class="flex flex-col gap-3 border border-solid rounded-xl justify-center items-center p-8 shadow-lg shadow-slate-500">
+                        class="flex flex-col gap-3 border border-solid rounded-xl justify-center items-center p-8 shadow-lg shadow-slate-500 hover:border-slate-200 hover:border-4 cursor-pointer">
                         <img src="https://ik.imagekit.io/elo1350/em-veg-starters-img.png?updatedAt=1755880302330"
                             class="w-[200px] rounded-3xl" alt="image1">
                         <h5 class="text-[24px] text-[#323f4b] font-bold">Veg Starters</h5>
@@ -126,7 +138,7 @@
                             </svg> </a>
                     </div>
                     <div
-                        class="flex flex-col gap-3 border border-solid rounded-xl justify-center items-center p-8 shadow-lg shadow-slate-500">
+                        class="flex flex-col gap-3 border border-solid rounded-xl justify-center items-center p-8 shadow-lg shadow-slate-500 hover:border-slate-200 hover:border-4 cursor-pointer">
                         <img src="https://ik.imagekit.io/elo1350/em-soup-img.png?updatedAt=1755880304635"
                             class="w-[200px] rounded-3xl" alt="image1">
                         <h5 class="text-[24px] text-[#323f4b] font-bold">Soups</h5>
@@ -139,7 +151,7 @@
                             </svg> </a>
                     </div>
                     <div
-                        class="flex flex-col gap-3 border border-solid rounded-xl justify-center items-center p-8 shadow-lg shadow-slate-500">
+                        class="flex flex-col gap-3 border border-solid rounded-xl justify-center items-center p-8 shadow-lg shadow-slate-500 hover:border-slate-200 hover:border-4 cursor-pointer">
                         <img src="https://ik.imagekit.io/elo1350/em-grilled-seafood-img.png?updatedAt=1755880294963"
                             class="w-[200px] rounded-3xl" alt="image1">
                         <h5 class="text-[24px] text-[#323f4b] font-bold">Fish & Sea Foods</h5>
@@ -152,7 +164,7 @@
                             </svg> </a>
                     </div>
                     <div
-                        class="flex flex-col gap-3 border border-solid rounded-xl justify-center items-center p-8 shadow-lg shadow-slate-500">
+                        class="flex flex-col gap-3 border border-solid rounded-xl justify-center items-center p-8 shadow-lg shadow-slate-500 hover:border-slate-200 hover:border-4 cursor-pointer">
                         <img src="https://ik.imagekit.io/elo1350/em-hyderabadi-biryani-img.png?updatedAt=1755880298902"
                             class="w-[200px] rounded-3xl" alt="image1">
                         <h5 class="text-[24px] text-[#323f4b] font-bold">Main Course</h5>
@@ -165,7 +177,7 @@
                             </svg> </a>
                     </div>
                     <div
-                        class="flex flex-col gap-3 border border-solid rounded-xl justify-center items-center p-8 shadow-lg shadow-slate-500">
+                        class="flex flex-col gap-3 border border-solid rounded-xl justify-center items-center p-8 shadow-lg shadow-slate-500 hover:border-slate-200 hover:border-4 cursor-pointer">
                         <img src="https://ik.imagekit.io/elo1350/em-mushroom-noodles-img.png?updatedAt=1755880295115"
                             class="w-[200px] rounded-3xl" alt="image1">
                         <h5 class="text-[24px] text-[#323f4b] font-bold">Noodles</h5>
@@ -178,7 +190,7 @@
                             </svg> </a>
                     </div>
                     <div
-                        class="flex flex-col gap-3 border border-solid rounded-xl justify-center items-center p-8 shadow-lg shadow-slate-500">
+                        class="flex flex-col gap-3 border border-solid rounded-xl justify-center items-center p-8 shadow-lg shadow-slate-500 hover:border-slate-200 hover:border-4 cursor-pointer">
                         <img src="https://ik.imagekit.io/elo1350/em-gluten-img.png?updatedAt=1755880303340"
                             class="w-[200px] rounded-3xl" alt="image1">
                         <h5 class="text-[24px] text-[#323f4b] font-bold">Salads</h5>
@@ -191,7 +203,7 @@
                             </svg> </a>
                     </div>
                     <div
-                        class="flex flex-col gap-3 border border-solid rounded-xl justify-center items-center p-8 shadow-lg shadow-slate-500">
+                        class="flex flex-col gap-3 border border-solid rounded-xl justify-center items-center p-8 shadow-lg shadow-slate-500 hover:border-slate-200 hover:border-4 cursor-pointer ">
                         <img src="https://ik.imagekit.io/elo1350/em-coffee-bourbon-img.png?updatedAt=1755880300175"
                             class="w-[200px] rounded-3xl" alt="image1">
                         <h5 class="text-[24px] text-[#323f4b] font-bold">Desserts</h5>
@@ -209,7 +221,7 @@
     </section>
     <!-- explore menu end -->
     <!-- Fresh,healthy start  -->
-    <section>
+    <section id="Fresh" class="pt-1">
         <div class="2xl:container mx-auto m-20">
             <div class="w-[80%] mx-auto bg-[#fafcff] grid grid-cols-1 lg:grid-cols-2 items-center">
                 <div class="flex justify-center">
@@ -233,68 +245,104 @@
     <!-- Fresh,healthy end  -->
 
     <!-- Delivery and Payment start -->
- 
-     <section>
+
+    <section id="Payment" class="pt-1">
         <div class="2xl:container mx-auto m-10">
             <div class="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center">
                 <div class="flex flex-col gap-4">
                     <h2 class="text-[#183b56] text-[34px] font-[700]">Delivery and Payment</h2>
-                    <p class="text-[#7b8794] text-[20px]">Enjoy hassle-free payment with the plenitude of payment options available for you. Get live tracking and locate your food on a live map. It's quite a sight to see your food arrive to your door. Plus, you get a 5% discount on every order every time you pay online.</p>
-                    <button class="py-3 px-5 rounded-lg text-[20px] bg-[#c2a502] border border-orange-300 text-white hover:bg-transparent hover:text-orange-500 shadow-md shadow-black w-40">Order Now</button>
+                    <p class="text-[#7b8794] text-[20px]">Enjoy hassle-free payment with the plenitude of payment
+                        options available for you. Get live tracking and locate your food on a live map. It's quite a
+                        sight to see your food arrive to your door. Plus, you get a 5% discount on every order every
+                        time you pay online.</p>
+                    <button
+                        class="py-3 px-5 rounded-lg text-[20px] bg-[#c2a502] border border-orange-300 text-white hover:bg-transparent hover:text-orange-500 shadow-md shadow-black w-40">Order
+                        Now</button>
                     <div class="flex w-14 h-10 gap-4 ">
                         <img src="https://ik.imagekit.io/elo1350/visa-card-img.png?updatedAt=1755880307583" alt="i1">
                         <img src="https://ik.imagekit.io/elo1350/master-card-img.png?updatedAt=1755880308334" alt="i1">
-                        <img src="https://ik.imagekit.io/elo1350/american-express-img.png?updatedAt=1755880308967" alt="i1">
-                        <img src="https://ik.imagekit.io/elo1350/Untitled%20design.png?updatedAt=1756178389069" alt="i1">
+                        <img src="https://ik.imagekit.io/elo1350/american-express-img.png?updatedAt=1755880308967"
+                            alt="i1">
+                        <img src="https://ik.imagekit.io/elo1350/Untitled%20design.png?updatedAt=1756178389069"
+                            alt="i1">
                     </div>
                 </div>
                 <div class="pl-32 w-[500px]">
-                    <img class="flex justify-center" src="https://ik.imagekit.io/elo1350/delivery-payment-section-img.png?updatedAt=1755880305867" alt="icon">
+                    <img class="flex justify-center"
+                        src="https://ik.imagekit.io/elo1350/delivery-payment-section-img.png?updatedAt=1755880305867"
+                        alt="icon">
                 </div>
             </div>
         </div>
-     </section>
-        <!-- Delivery and Payment end -->
-         <!-- Thank you for being a valuable customer to us. Start  -->
-               <section>
+    </section>
+    <!-- Delivery and Payment end -->
+    <!-- Thank you for being a valuable customer to us. Start  -->
+    <section id="Gift" class="pt-1">
         <div class="2xl:container mx-auto m-10">
             <div class="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center">
                 <div class="flex flex-col gap-4">
-                    <h2 class="text-[#183b56] text-[34px] font-[700]">Thank you for being a valuable customer to us.</h2>
+                    <h2 class="text-[#183b56] text-[34px] font-[700]">Thank you for being a valuable customer to us.
+                    </h2>
                     <p class="text-[#7b8794] text-[20px]">We have a surprise gift for you</p>
-                    <button class="py-3 px-5 rounded-lg text-[20px] bg-[#c2a502] border border-orange-300 text-white hover:bg-transparent hover:text-orange-500 shadow-md shadow-black w-40">Redeem Gift</button>
+                    <button
+                        class="py-3 px-5 rounded-lg text-[20px] bg-[#c2a502] border border-orange-300 text-white hover:bg-transparent hover:text-orange-500 shadow-md shadow-black w-40">Redeem
+                        Gift</button>
                 </div>
-                <div class="pl-32 w-[350px]">
-                    <img class="flex justify-center" src="https://ik.imagekit.io/elo1350/thanking-customers-section-img.png?updatedAt=1755880310942" alt="icon">
+                <div class="pl-32 w-[350px] shake-image">
+                    <img class="flex justify-center"
+                        src="https://ik.imagekit.io/elo1350/thanking-customers-section-img.png?updatedAt=1755880310942"
+                        alt="icon">
                 </div>
             </div>
         </div>
-     </section>
-         <!-- Thank you for being a valuable customer to us. End  -->
-          <!-- Follow Start  -->
-           <section>
-            <div class="2xl:container mx-auto m-10">
-                <div class="w-[80%] mx-auto bg-[#fafcff] flex flex-col justify-center items-center">
-                    <div>
-                        <h2 class="text-[#183b56] text-[34px] font-[700]">Follow Us</h2>
-                    </div>
-                    <div class="flex gap-5">
-                        <a href="https://www.instagram.com/"><svg class="bg-[#f0ce69] rounded-lg border border-solid border-black h-[40px] w-[40px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
-                        <a href="https://www.facebook.com/"><svg class="bg-[#f0ce69] rounded-lg border border-solid border-black h-[40px] w-[40px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-                        <a href="https://www.youtube.com/"><svg class="bg-[#f0ce69] rounded-lg border border-solid border-black h-[40px] w-[40px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube-icon lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg></a>        
-                    </div>
+    </section>
+    <!-- Thank you for being a valuable customer to us. End  -->
+    <!-- Follow Start  -->
+    <section id="Social" class="pt-1">
+        <div class="2xl:container mx-auto m-10">
+            <div class="w-[80%] mx-auto bg-[#fafcff] flex flex-col justify-center items-center">
+                <div>
+                    <h2 class="text-[#183b56] text-[34px] font-[700]">Follow Us</h2>
+                </div>
+                <div class="flex gap-5">
+                    <a href="https://www.instagram.com/"><svg
+                            class="bg-[#ff007b] rounded-lg border border-solid border-black h-[40px] w-[40px] hover:bg-transparent"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-instagram-icon lucide-instagram">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg></a>
+                    <a href="https://www.facebook.com/"><svg
+                            class="bg-[#0866ff] rounded-lg border border-solid border-black h-[40px] w-[40px] hover:bg-transparent"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-facebook-icon lucide-facebook">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg></a>
+                    <a href="https://www.youtube.com/"><svg
+                            class="bg-[#ff0033] rounded-lg border border-solid border-black h-[40px] w-[40px] hover:bg-transparent"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-youtube-icon lucide-youtube">
+                            <path
+                                d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+                            <path d="m10 15 5-3-5-3z" />
+                        </svg></a>
                 </div>
             </div>
-           </section>
-          <!-- Follow End  -->
-<!-- footer start  -->
- <footer class="bg-slate-900 flex flex-col justify-center items-center gap-3 p-10">
-    <img class="w-28" src="https://ik.imagekit.io/elo1350/food-munch-img.png?updatedAt=1755879754577" alt="logo">
-    <a href="mailto:orderfood@foodmunch.com" class="text-slate-200 text-[20px]">orderfood@foodmunch.com</a>
-    <h5 class="text-slate-200 text-[20px]">123 Ayur Vigyan Nagar, New Delhi, India.</h5> 
-</footer>
- <!-- footer end  -->
+        </div>
+    </section>
+    <!-- Follow End  -->
+    <!-- footer start  -->
+    <footer class="bg-slate-900 flex flex-col justify-center items-center gap-3 p-10">
+        <img class="w-28" src="https://ik.imagekit.io/elo1350/food-munch-img.png?updatedAt=1755879754577" alt="logo">
+        <a href="mailto:orderfood@foodmunch.com" class="text-slate-200 text-[20px]">orderfood@foodmunch.com</a>
+        <h5 class="text-slate-200 text-[20px]">123 Ayur Vigyan Nagar, New Delhi, India.</h5>
+    </footer>
+    <!-- footer end  -->
 
-        </body>
+</body>
 
 </html>
